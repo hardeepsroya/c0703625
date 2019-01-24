@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace c0703625
 {
-   public class Customer
+    public class Customer
     {
         public int ID { get; set; }
         public string name { get; set; }
         public void Promote()
         {
             var rating = CalculateRating();
-            if (rating==0)
+            if (rating == 0)
             {
                 Console.WriteLine("Promoted to Level 1");
             }
@@ -23,11 +23,55 @@ namespace c0703625
         {
             return 0;
         }
-       
-   
     }
-}
+    class Program
+    { 
+                static void Main(string[] args)
+                {
+                    //var dog_cat = new car();
+                    // var bowling = new car();
+                    //Console.WriteLine("how many cars :{0}", Vehicle.howmanyCars);
+                    //Console.ReadLine();
 
-    
-    
+                    // Book myBook = new Book();
+                    //myBook.SetTitle("A seperate Peace");
+
+                    var customer = new customer();
+                    customer.
+                }
+            }
+
+
+         class Vehicle
+        {
+            public static int howmanyCars = 3;
+            public String color = "blue";
+        }
+
+        class car : Vehicle
+        {
+            public String color = "red";
+            public car()
+            {
+                Vehicle.howmanyCars++;
+                Console.WriteLine("my color is" + color);
+            }
+        }
+        class BookCollection
+        {
+
+        }
+        class Book : BookCollecion
+        {
+            private String Title;
+            public void SetTitle(String aTitle) { this.Title = aTitle; }
+            public String GetTitle() { return this.Title; }
+        }
+
+
+    }
+
+
+
+
 
